@@ -1,0 +1,101 @@
+/batch
+/config,noeldb,1     ! force off writing results to database
+! ANSYS input file written by Workbench version 2021 R1
+
+/SYS,"C:\Program Files\ANSYS Inc\v211\\aisol\bin\winx64\Opti.exe" 62996 NEW
+
+/CLEAR,NOSTART
+/FILNAME,file_Static22
+resume,,db
+esel,u,ename,,153,156
+esel,r,sfe,pres,-1e100,1e100
+*get,_numsfeelem,elem,0,count
+*if,_numsfeelem,ne,0,then
+allsel
+/solu
+bfedele,all, TEMP ! Deletes temperature based body load
+bfdele,all, TEMP ! Deletes temperature based body load
+acel,0.0,0.0,0.0  ! Deletes linear acceleration
+cgom,0.0,0.0,0.0  ! Deletes rotational velocity
+dcgomg,0.0,0.0,0.0  ! Deletes rotational acceleration
+rescontrol,,none				! No multiframe restarts file
+/com,******************* SOLVE FOR LS 1 ****************
+outres,erase
+outres,all,none
+outres,nsol,last
+outres,eangl,last
+outres,etmp,last
+outres,veng,last
+outres,nload,last  ! Output nodal forces at all time points for Topology Optimization future intent
+! *********** WB SOLVE COMMAND ***********
+! check interactive state
+*get,ANSINTER_,active,,int
+*if,ANSINTER_,ne,0,then
+/eof
+*endif
+nsubst,1,1,1
+ematwrite,yes
+psolve,elform,topo
+fini
+/SYS,"C:\Program Files\ANSYS Inc\v211\\aisol\bin\winx64\Opti.exe" 62996 PRES1
+/solu
+/com,****************************************************
+/com,*************** FINISHED SOLVE FOR LS 1 *************
+*get,_wallasol,active,,time,wall
+
+*else
+/SYS,"C:\Program Files\ANSYS Inc\v211\\aisol\bin\winx64\Opti.exe" 62996 PRES1
+*endif
+
+*DIM,notconverged_array,,1
+*vread,notconverged_array(1),notconverged,dat
+(F8.0)
+*SET,notconverged,notconverged_array(1)
+*if,notconverged,ne,1,then
+/eof
+*endif
+*dowhile,notconverged
+   /CLEAR,NOSTART
+   /FILNAME,file_Static22
+   resume,,db
+   /config,resuprec,0              ! We read the element nodal forces (ENF) from the rst file
+                                   ! and need these values in double precision
+   /solu
+   rescontrol,,none				! No multiframe restarts file
+   /com,******************* SOLVE FOR LS 1 ****************
+   outres,erase
+   outres,all,none
+   outres,nsol,last
+   outres,eangl,last
+   outres,etmp,last
+   outres,veng,last
+   outres,nload,last  ! Output nodal forces at all time points for Topology Optimization future intent
+   ! *********** WB SOLVE COMMAND ***********
+   ! check interactive state
+   *get,ANSINTER_,active,,int
+   *if,ANSINTER_,ne,0,then
+   /eof
+   *endif
+   outres, rsol,last
+   ncnv,,1e+12
+   DMPOPTION,rst,no
+   TOTYPE,EXTERNAL                 ! Activates modification of element stiffness matrices
+   solve
+   /com,****************************************************
+   /com,*************** FINISHED SOLVE FOR LS 1 *************
+   *get,_wallasol,active,,time,wall
+
+   finish
+   
+   /SYS,"C:\Program Files\ANSYS Inc\v211\\aisol\bin\winx64\Opti.exe" 62996 TOPO1
+   
+   *DIM,notconverged_array,,1
+   *vread,notconverged_array(1),notconverged,dat
+   (F8.0)
+   *SET,notconverged,notconverged_array(1)
+*ENDDO
+/FILNAME,file_Static22
+/AUX2
+COMBINE,RST
+finish
+/exit,nosave

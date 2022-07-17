@@ -1,0 +1,578 @@
+
+ ANSYS Mechanical Enterprise Academic Teaching     
+
+ *** NOTE ***                            CP =       0.078   TIME= 23:27:21
+ QA Services Agreement Enabled.  This application is included in the     
+ scope of an ANSYS QA Services Agreement.                                
+
+
+ *------------------------------------------------------------------*
+ |                                                                  |
+ |   W E L C O M E   T O   T H E   A N S Y S (R)  P R O G R A M     |
+ |                                                                  |
+ *------------------------------------------------------------------*
+
+
+
+
+ ***************************************************************
+ *            ANSYS 2021 R1          LEGAL NOTICES             *
+ ***************************************************************
+ *                                                             *
+ * Copyright 1971-2021 ANSYS, Inc.  All rights reserved.       *
+ * Unauthorized use, distribution or duplication is            *
+ * prohibited.                                                 *
+ *                                                             *
+ * Ansys is a registered trademark of ANSYS, Inc. or its       *
+ * subsidiaries in the United States or other countries.       *
+ * See the ANSYS, Inc. online documentation or the ANSYS, Inc. *
+ * documentation CD or online help for the complete Legal      *
+ * Notice.                                                     *
+ *                                                             *
+ ***************************************************************
+ *                                                             *
+ * THIS ANSYS SOFTWARE PRODUCT AND PROGRAM DOCUMENTATION       *
+ * INCLUDE TRADE SECRETS AND CONFIDENTIAL AND PROPRIETARY      *
+ * PRODUCTS OF ANSYS, INC., ITS SUBSIDIARIES, OR LICENSORS.    *
+ * The software products and documentation are furnished by    *
+ * ANSYS, Inc. or its subsidiaries under a software license    *
+ * agreement that contains provisions concerning               *
+ * non-disclosure, copying, length and nature of use,          *
+ * compliance with exporting laws, warranties, disclaimers,    *
+ * limitations of liability, and remedies, and other           *
+ * provisions.  The software products and documentation may be *
+ * used, disclosed, transferred, or copied only in accordance  *
+ * with the terms and conditions of that software license      *
+ * agreement.                                                  *
+ *                                                             *
+ * ANSYS, Inc. is a UL registered                              *
+ * ISO 9001:2015 company.                                      *
+ *                                                             *
+ ***************************************************************
+ *                                                             *
+ * This product is subject to U.S. laws governing export and   *
+ * re-export.                                                  *
+ *                                                             *
+ * For U.S. Government users, except as specifically granted   *
+ * by the ANSYS, Inc. software license agreement, the use,     *
+ * duplication, or disclosure by the United States Government  *
+ * is subject to restrictions stated in the ANSYS, Inc.        *
+ * software license agreement and FAR 12.212 (for non-DOD      *
+ * licenses).                                                  *
+ *                                                             *
+ ***************************************************************
+
+ 2021 R1 
+     
+ Point Releases and Patches installed:   
+     
+ ANSYS, Inc. Products 2021 R1
+ SpaceClaim 2021 R1  
+ Discovery 2021 R1   
+ ANSYS Sherlock 2021 R1  
+ Autodyn 2021 R1 
+ LS-DYNA 2021 R1 
+ CFD-Post only 2021 R1   
+ CFX (includes CFD-Post) 2021 R1 
+ Chemkin 2021 R1 
+ EnSight 2021 R1 
+ FENSAP-ICE 2021 R1  
+ Fluent (includes CFD-Post) 2021 R1  
+ Forte (includes EnSight) 2021 R1
+ Polyflow (includes CFD-Post) 2021 R1
+ TurboGrid 2021 R1   
+ ICEM CFD 2021 R1
+ Aqwa 2021 R1
+ SPEOS 2021 R1   
+ Customization Files for User Programmable Features 2021 R1  
+ Mechanical Products 2021 R1 
+ Additive 2021 R1
+ Icepak (includes CFD-Post) 2021 R1  
+ Remote Solve Manager Standalone Services 2021 R1
+ SPEOS HPC 2021 R1   
+ Viewer 2021 R1  
+ ACIS Geometry Interface 2021 R1 
+ AutoCAD Geometry Interface 2021 R1  
+ Catia, Version 4 Geometry Interface 2021 R1 
+ Catia, Version 5 Geometry Interface 2021 R1 
+ Catia, Version 6 Geometry Interface 2021 R1 
+ Creo Elements/Direct Modeling Geometry Interface 2021 R1
+ Creo Parametric Geometry Interface 2021 R1  
+ Inventor Geometry Interface 2021 R1 
+ JTOpen Geometry Interface 2021 R1   
+ NX Geometry Interface 2021 R1   
+ Parasolid Geometry Interface  2021 R1   
+ Solid Edge Geometry Interface 2021 R1   
+ SOLIDWORKS Geometry Interface 2021 R1   
+ ANSYS, Inc. License Manager 2021 R1 
+
+
+          *****  ANSYS COMMAND LINE ARGUMENTS  *****
+  BATCH MODE REQUESTED (-b)    = NOLIST
+  INPUT FILE COPY MODE (-c)    = COPY
+  DISTRIBUTED MEMORY PARALLEL REQUESTED
+       2 PARALLEL PROCESSES REQUESTED WITH SINGLE THREAD PER PROCESS
+    TOTAL OF     2 CORES REQUESTED
+  INPUT FILE NAME              = C:\Users\janga\AppData\Local\Temp\WB_janga_17068_2\_ProjectScratch\ScrBEE3\dummy.dat
+  OUTPUT FILE NAME             = C:\Users\janga\AppData\Local\Temp\WB_janga_17068_2\_ProjectScratch\ScrBEE3\solve.out
+  START-UP FILE MODE           = NOREAD
+  STOP FILE MODE               = NOREAD
+
+ RELEASE= 2021 R1              BUILD= 21.1      UP20201109   VERSION=WINDOWS x64 
+ CURRENT JOBNAME=file0  23:27:21  JUN 26, 2022 CP=      0.250
+
+
+ PARAMETER _DS_PROGRESS =     999.0000000    
+
+ /INPUT FILE= ds.dat  LINE=       0
+
+
+
+ *** NOTE ***                            CP =       0.328   TIME= 23:27:22
+ The /CONFIG,NOELDB command is not valid in a Distributed ANSYS          
+ solution.  Command is ignored.                                          
+
+ *GET  _WALLSTRT  FROM  ACTI  ITEM=TIME WALL  VALUE=  23.4561111    
+
+ ASSIGN FILE RSTP TO file.rst                                                                                                                                                                                                                                                            
+
+ *** NOTE ***                            CP =       0.344   TIME= 23:27:22
+ File= file.rst does not exist and will be created.                      
+
+ *****  ANSYS SOLUTION ROUTINE  *****
+
+
+ PERFORM A STATIC ANALYSIS
+  RESTART WILL BE PERFORMED FOR THE ANALYSIS OF LINEAR PERTURBATION
+  RESTART WILL BE PERFORMED BASED ON: 
+   PREVIOUS LOADSTEP =      1 SUBSTEP =      1
+
+ RESUME ANSYS DATA FROM FILE NAME=file.rdb                                                                                                                                                                                                                                                            
+     DO NOT PLOT ANYTHING
+
+ *** ANSYS GLOBAL STATUS *** 
+
+ TITLE = wbnew--Static Structural (A5)                                         
+ ANALYSIS TYPE =  STATIC (STEADY-STATE)
+ NUMBER OF ELEMENT TYPES =      2
+       130 ELEMENTS CURRENTLY SELECTED.  MAX ELEMENT NUMBER =         130
+       382 NODES CURRENTLY SELECTED.     MAX NODE NUMBER =            382
+         3 COMPONENTS CURRENTLY DEFINED
+ MAXIMUM LINEAR PROPERTY NUMBER        =       1
+ MAXIMUM REAL CONSTANT SET NUMBER      =       4
+ ACTIVE COORDINATE SYSTEM              =       0  (CARTESIAN)  
+ NUMBER OF SPECIFIED CONSTRAINTS       =       6
+ NUMBER OF SPECIFIED SURFACE LOADS     =       3
+ CURRENT LOAD CASE =      0 OF      0
+ LOAD SET   =       1
+ SUBSTEP    =       1
+ TIME/FREQ  =    1.0000    
+
+ INITIAL JOBNAME = file
+ CURRENT JOBNAME = file0
+
+ RESTART PROCEDURE RE-BUILDS BOUNDARY CONDITIONS
+ AND LOADING INFO UPTO THE CURRENT LOADSTEP 
+
+ READ ANSYS LOADS DATA FROM FILE= file.ldhi                                                                                                                                                                                                                                                           
+
+ DELETE SOLID MODEL BOUNDARY CONDITIONS
+ 
+ NUMBER OF NODAL CONSTRAINTS DELETED                       =         6
+ NUMBER OF ELEMENT PRESSURES DELETED                       =         3
+
+ SET PARAMETER DIMENSIONS ON  _WB_PROJECTSCRATCH_DIR_BUCKLING
+  TYPE=STRI  DIMENSIONS=      248        1        1
+
+ PARAMETER _WB_PROJECTSCRATCH_DIR_BUCKLING(1) = C:\Users\janga\AppData\Local\Temp\WB_janga_17068_2\_ProjectScratch\ScrBEE3\
+
+ SET PARAMETER DIMENSIONS ON  _WB_SOLVERFILES_DIR_BUCKLING
+  TYPE=STRI  DIMENSIONS=      248        1        1
+
+ PARAMETER _WB_SOLVERFILES_DIR_BUCKLING(1) = C:\Users\janga\AppData\Local\Temp\WB_janga_17068_2\wbnew_files\dp0\SYS-1\MECH\
+
+ SET PARAMETER DIMENSIONS ON  _WB_USERFILES_DIR_BUCKLING
+  TYPE=STRI  DIMENSIONS=      248        1        1
+
+ PARAMETER _WB_USERFILES_DIR_BUCKLING(1) = C:\Users\janga\AppData\Local\Temp\WB_janga_17068_2\wbnew_files\user_files\
+
+ TITLE= 
+ wbnew--Eigenvalue Buckling (B5)                                               
+
+
+ PERTURB: Enabling perturbation analysis with prestressed linear buckling solution.
+ PERTURB: Enabling perturbation contact status remains the same as in restart step.
+ PERTURB: Enabling perturbation to keep all boundary conditions.
+
+ *****  ANSYS SOLVE    COMMAND  *****
+
+ *** ANSYS - ENGINEERING ANALYSIS SYSTEM  RELEASE 2021 R1          21.1     ***
+ DISTRIBUTED ANSYS Mechanical Enterprise Academic Teaching     
+
+ 00000000  VERSION=WINDOWS x64   23:27:22  JUN 26, 2022 CP=      0.438
+
+ wbnew--Eigenvalue Buckling (B5)                                               
+
+
+
+                       S O L U T I O N   O P T I O N S
+
+   PROBLEM DIMENSIONALITY. . . . . . . . . . . . .3-D                  
+   DEGREES OF FREEDOM. . . . . . UX   UY   UZ   ROTX ROTY ROTZ
+   ANALYSIS TYPE . . . . . . . . . . . . . . . . .STATIC (STEADY-STATE)
+      RESTART. . . . . . . . . . . . . . . . . . .ON
+   LINEAR PERTURBATION . . . . . . . . . . . . . .ON
+   OFFSET TEMPERATURE FROM ABSOLUTE ZERO . . . . .  459.67    
+
+ *** WARNING ***                         CP =       0.438   TIME= 23:27:22
+ Material number 2 (used by element 128) should normally have at least   
+ one MP or one TB type command associated with it.  Output of energy by  
+ material may not be available.                                          
+
+ *** NOTE ***                            CP =       0.438   TIME= 23:27:22
+ The step data was checked and warning messages were found.              
+  Please review output or errors file (                                  
+ C:\Users\janga\AppData\Local\Temp\WB_janga_17068_2\_ProjectScratch\ScrB 
+ BEE3\file0.err ) for these warning messages.                            
+
+                      L O A D   S T E P   O P T I O N S
+
+   SOLUTION TO BE PERTURBED CORRESPONDS TO
+      TIME . . . . . . . . . . . . . . . . . . . .  1.0000    
+      LOAD STEP. . . . . . . . . . . . . . . . . .     1
+      SUBSTEP. . . . . . . . . . . . . . . . . . .     1
+   STRESS-STIFFENING . . . . . . . . . . . . . . .    ON
+
+ *** NOTE ***                            CP =       0.469   TIME= 23:27:22
+ This SOLVE command is only used to generate the matrices needed to      
+ perform the linear perturbation analysis.  The linear perturbation      
+ analysis corresponds to time = 1 (load step = 1, substep = 1).  No      
+ results are being written.                                              
+
+ *** NOTE ***                            CP =       0.469   TIME= 23:27:22
+ The prior(base) analysis is LINEAR, use the total load prescribed in    
+ the linear perturbation process to calculate the critical               
+ eigen-buckling loads.                                                   
+
+
+ LINEAR PERTURBATION ANALYSIS PROCEDURE KEEPS ALL
+ BOUNDARY CONDITIONS IN DATABASE
+
+
+ USE SYM. BLOCK LANCZOS METHOD TO EXTRACT       2 MODES
+  EXTRACT EIGENVALUES CENTERED ABOUT   0.0000    
+
+ ERASE THE CURRENT DATABASE OUTPUT CONTROL TABLE.
+
+
+ WRITE ALL  ITEMS TO THE DATABASE WITH A FREQUENCY OF NONE
+   FOR ALL APPLICABLE ENTITIES
+
+ WRITE NSOL ITEMS TO THE DATABASE WITH A FREQUENCY OF ALL 
+   FOR ALL APPLICABLE ENTITIES
+
+ WRITE ETMP ITEMS TO THE DATABASE WITH A FREQUENCY OF ALL 
+   FOR ALL APPLICABLE ENTITIES
+
+ PRINTOUT RESUMED BY /GOP
+
+ WRITE MISC ITEMS TO THE DATABASE WITH A FREQUENCY OF ALL 
+   FOR THE ENTITIES DEFINED BY COMPONENT _ELMISC 
+
+
+ EXPAND ALL EXTRACTED MODES
+  CALCULATE ELEMENT RESULTS AND NODAL DOF SOLUTION
+  CALCULATE STRESSES IN ANY DOWNSTREAM MODE SUPERPOSITION EXPANSION PASS
+
+ *GET  ANSINTER_  FROM  ACTI  ITEM=INT        VALUE=  0.00000000    
+
+ *IF  ANSINTER_                         ( =   0.00000     )  NE  
+      0                                 ( =   0.00000     )  THEN    
+
+ *ENDIF
+
+ *****  ANSYS SOLVE    COMMAND  *****
+
+ *** WARNING ***                         CP =       0.516   TIME= 23:27:22
+ Element shape checking is currently inactive.  Issue SHPP,ON or         
+ SHPP,WARN to reactivate, if desired.                                    
+
+ *** NOTE ***                            CP =       0.516   TIME= 23:27:22
+ The model data was checked and warning messages were found.             
+  Please review output or errors file (                                  
+ C:\Users\janga\AppData\Local\Temp\WB_janga_17068_2\_ProjectScratch\ScrB 
+ BEE3\file0.err ) for these warning messages.                            
+
+ *** SELECTION OF ELEMENT TECHNOLOGIES FOR APPLICABLE ELEMENTS ***
+      --- GIVE SUGGESTIONS AND RESET THE KEY OPTIONS ---
+
+ ELEMENT TYPE         1 IS BEAM188 . KEYOPT(1)=1 IS SUGGESTED FOR NON-CIRCULAR CROSS
+ SECTIONS AND KEYOPT(3) IS ALREADY SET AS SUGGESTED. KEYOPT(1) CAN NOT BE RESET
+ HERE. PLEASE RESET IT MANUALLY ACCORDING TO CROSS SECTION TYPES IF NECESSARY.
+
+ ELEMENT TYPE         1 IS BEAM188 . KEYOPT(15) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+
+
+ *** ANSYS - ENGINEERING ANALYSIS SYSTEM  RELEASE 2021 R1          21.1     ***
+ DISTRIBUTED ANSYS Mechanical Enterprise Academic Teaching     
+
+ 00000000  VERSION=WINDOWS x64   23:27:22  JUN 26, 2022 CP=      0.516
+
+ wbnew--Eigenvalue Buckling (B5)                                               
+
+
+
+                       S O L U T I O N   O P T I O N S
+
+   PROBLEM DIMENSIONALITY. . . . . . . . . . . . .3-D                  
+   DEGREES OF FREEDOM. . . . . . UX   UY   UZ   ROTX ROTY ROTZ
+   ANALYSIS TYPE . . . . . . . . . . . . . . . . .BUCKLING             
+      EXTRACTION METHOD. . . . . . . . . . . . . .BLOCK LANCZOS
+   LINEAR PERTURBATION . . . . . . . . . . . . . .ON
+   OFFSET TEMPERATURE FROM ABSOLUTE ZERO . . . . .  459.67    
+   PRESTRESS EFFECTS INCLUDED IF AVAILABLE . . . .YES
+   GLOBALLY ASSEMBLED MATRIX . . . . . . . . . . .SYMMETRIC  
+
+ *** WARNING ***                         CP =       0.516   TIME= 23:27:22
+ Material number 2 (used by element 128) should normally have at least   
+ one MP or one TB type command associated with it.  Output of energy by  
+ material may not be available.                                          
+
+ *** NOTE ***                            CP =       0.516   TIME= 23:27:22
+ The step data was checked and warning messages were found.              
+  Please review output or errors file (                                  
+ C:\Users\janga\AppData\Local\Temp\WB_janga_17068_2\_ProjectScratch\ScrB 
+ BEE3\file0.err ) for these warning messages.                            
+
+                      L O A D   S T E P   O P T I O N S
+
+   LOAD STEP NUMBER. . . . . . . . . . . . . . . .     1
+   PRINT OUTPUT CONTROLS . . . . . . . . . . . . .NO PRINTOUT
+   DATABASE OUTPUT CONTROLS
+      ITEM     FREQUENCY   COMPONENT
+       ALL       NONE               
+      NSOL        ALL               
+      ETMP        ALL               
+      MISC        ALL       _ELMISC 
+
+
+
+  BLOCK LANCZOS CALCULATION OF UP TO     2 EIGENVECTORS.
+  NUMBER OF EQUATIONS              =         1524
+  MAXIMUM WAVEFRONT                =           24
+  MAXIMUM MODES STORED             =            2
+  MINIMUM EIGENVALUE               = -0.10000E+31
+  MAXIMUM EIGENVALUE               =  0.10000E+31
+  CENTER EIGENVALUE                =  0.00000E+00
+
+
+  Local memory allocated for solver              =      0.724 MB
+  Local memory required for in-core solution     =      0.697 MB
+  Local memory required for out-of-core solution =      0.549 MB
+
+  Total memory allocated for solver              =      1.398 MB
+  Total memory required for in-core solution     =      1.347 MB
+  Total memory required for out-of-core solution =      1.080 MB
+
+ *** NOTE ***                            CP =       0.656   TIME= 23:27:22
+ The Distributed Sparse Matrix Solver is currently running in the        
+ in-core memory mode.  This memory mode uses the most amount of memory   
+ in order to avoid using the hard drive as much as possible, which most  
+ often results in the fastest solution time.  This mode is recommended   
+ if enough physical memory is present to accommodate all of the solver   
+ data.                                                                   
+
+ *** ANSYS - ENGINEERING ANALYSIS SYSTEM  RELEASE 2021 R1          21.1     ***
+ DISTRIBUTED ANSYS Mechanical Enterprise Academic Teaching     
+
+ 00000000  VERSION=WINDOWS x64   23:27:22  JUN 26, 2022 CP=      0.688
+
+ wbnew--Eigenvalue Buckling (B5)                                               
+
+
+
+  ***** EIGENVALUES (LOAD MULTIPLIERS FOR BUCKLING) *****
+            *** FROM BLOCK LANCZOS ITERATION ***
+
+      SHAPE NUMBER   LOAD MULTIPLIER
+
+            1            4.2713867    
+            2            22.718131    
+
+
+
+   *** ELEMENT RESULT CALCULATION TIMES
+     TYPE    NUMBER   ENAME      TOTAL CP  AVE CP
+
+        1       127  BEAM188       0.031   0.000246
+        2         3  CLOAD201      0.000   0.000000
+
+   *** NODAL LOAD CALCULATION TIMES
+     TYPE    NUMBER   ENAME      TOTAL CP  AVE CP
+
+        1       127  BEAM188       0.000   0.000000
+        2         3  CLOAD201      0.000   0.000000
+
+
+ *** ANSYS BINARY FILE STATISTICS
+  BUFFER SIZE USED= 16384
+        0.375 MB WRITTEN ON ELEMENT MATRIX FILE: file0.emat
+        1.250 MB WRITTEN ON ELEMENT SAVED DATA FILE: file0.esav
+        0.125 MB WRITTEN ON ASSEMBLED MATRIX FILE: file0.full
+        0.062 MB WRITTEN ON MODAL MATRIX FILE: file0.mode
+        0.500 MB WRITTEN ON RESULTS FILE: file0.rst
+ *************** Write FE CONNECTORS *********
+
+ WRITE OUT CONSTRAINT EQUATIONS TO FILE= file.ce                                                                                                                                                                                                                                                             
+
+ *GET  _NMODALSOLPROC  FROM  ACTI  ITEM=NUMC       VALUE=  2.00000000    
+
+ FINISH SOLUTION PROCESSING
+
+
+ ***** ROUTINE COMPLETED *****  CP =         0.750
+
+
+
+ PRINTOUT RESUMED BY /GOP
+
+ *GET  _WALLASOL  FROM  ACTI  ITEM=TIME WALL  VALUE=  23.4561111    
+
+ *** ANSYS - ENGINEERING ANALYSIS SYSTEM  RELEASE 2021 R1          21.1     ***
+ DISTRIBUTED ANSYS Mechanical Enterprise Academic Teaching     
+
+ 00000000  VERSION=WINDOWS x64   23:27:22  JUN 26, 2022 CP=      0.750
+
+ wbnew--Eigenvalue Buckling (B5)                                               
+
+
+
+          ***** ANSYS RESULTS INTERPRETATION (POST1) *****
+
+ *** NOTE ***                            CP =       0.750   TIME= 23:27:22
+ Reading results into the database (SET command) will update the current 
+ displacement and force boundary conditions in the database with the     
+ values from the results file for that load set.  Note that any          
+ subsequent solutions will use these values unless action is taken to    
+ either SAVE the current values or not overwrite them (/EXIT,NOSAVE).    
+
+ Set Encoding of XML File to:ISO-8859-1
+
+ Set Output of XML File to:
+     PARM,     ,     ,     ,     ,     ,     ,     ,     ,     ,     ,     ,
+         ,     ,     ,     ,     ,     ,     ,
+
+ DATABASE WRITTEN ON FILE  parm.xml                                                                                                                                                                                                                                                            
+
+ EXIT THE ANSYS POST1 DATABASE PROCESSOR
+
+
+ ***** ROUTINE COMPLETED *****  CP =         0.750
+
+
+
+ PRINTOUT RESUMED BY /GOP
+
+ *GET  _WALLDONE  FROM  ACTI  ITEM=TIME WALL  VALUE=  23.4561111    
+
+ PARAMETER _PREPTIME =     0.000000000    
+
+ PARAMETER _SOLVTIME =     8.000000000    
+
+ PARAMETER _POSTTIME =     0.000000000    
+
+ PARAMETER _TOTALTIM =     8.000000000    
+
+ *GET  _DLBRATIO  FROM  ACTI  ITEM=SOLU DLBR  VALUE=  1.03076923    
+
+ *GET  _COMBTIME  FROM  ACTI  ITEM=SOLU COMB  VALUE= 0.174572000E-01
+ --- Total number of nodes = 255
+ --- Total number of elements = 130
+ --- Element load balance ratio = 1.03076923
+ --- Time to combine distributed files = 1.74572E-02
+
+ EXIT ANSYS WITHOUT SAVING DATABASE
+
+
+ NUMBER OF WARNING MESSAGES ENCOUNTERED=          3
+ NUMBER OF ERROR   MESSAGES ENCOUNTERED=          0
+
++--------- D I S T R I B U T E D   A N S Y S   S T A T I S T I C S ------------+
+
+Release: 2021 R1            Build: 21.1       Update: UP20201109   Platform: WINDOWS x64 
+Date Run: 06/26/2022   Time: 23:27     Process ID: 13980
+Operating System: Windows 10  (Build: 22000)
+
+Processor Model: Intel(R) Core(TM) i5-10300H CPU @ 2.50GHz
+
+Compiler: Intel(R) FORTRAN Compiler Version 19.0.0  (Build: 20190206)
+          Intel(R) C/C++ Compiler Version 19.0.0  (Build: 20190206)
+          Intel(R) Math Kernel Library Version 2020.0.0 Product Build 20191125
+
+Number of machines requested            :    1
+Total number of cores available         :    8
+Number of physical cores available      :    4
+Number of processes requested           :    2
+Number of threads per process requested :    1
+Total number of cores requested         :    2 (Distributed Memory Parallel)               
+MPI Type: INTELMPI
+MPI Version: Intel(R) MPI Library 2018 Update 3 for Windows* OS
+
+
+GPU Acceleration: Not Requested
+
+Job Name: file0
+Input File: dummy.dat
+
+  Core                Machine Name   Working Directory
+ -----------------------------------------------------
+     0         Rakesh-kumar-iitk-6   C:\Users\janga\AppData\Local\Temp\WB_janga_17068_2\_ProjectScratch\ScrBEE3
+     1         Rakesh-kumar-iitk-6   C:\Users\janga\AppData\Local\Temp\WB_janga_17068_2\_ProjectScratch\ScrBEE3
+ 
+Latency time from master to core     1 =    1.594 microseconds
+ 
+Communication speed from master to core     1 =  3510.33 MB/sec
+
+Total CPU time for main thread                    :        0.9 seconds
+Total CPU time summed for all threads             :        0.8 seconds
+
+Elapsed time spent obtaining a license            :        0.4 seconds
+Elapsed time spent pre-processing model (/PREP7)  :        0.0 seconds
+Elapsed time spent solution - preprocessing       :        0.0 seconds
+Elapsed time spent computing solution             :        0.2 seconds
+Elapsed time spent solution - postprocessing      :        0.0 seconds
+Elapsed time spent post-processing model (/POST1) :        0.0 seconds
+ 
+Eigensolver used                                  :            Block Lanczos
+
+Maximum total memory used                         :       92.0 MB
+Maximum total memory allocated                    :     3136.0 MB
+Total physical memory available                   :         16 GB
+
+Total amount of I/O written to disk               :        0.0 GB
+Total amount of I/O read from disk                :        0.0 GB
+
++------ E N D   D I S T R I B U T E D   A N S Y S   S T A T I S T I C S -------+
+
+
+ *---------------------------------------------------------------------------*
+ |                                                                           |
+ |                       DISTRIBUTED ANSYS RUN COMPLETED                     |
+ |                                                                           |
+ |---------------------------------------------------------------------------|
+ |                                                                           |
+ | Ansys 2021 R1               Build 21.1         UP20201109     WINDOWS x64 |
+ |                                                                           |
+ |---------------------------------------------------------------------------|
+ |                                                                           |
+ | Database Requested(-db)  1024 MB    Scratch Memory Requested      1024 MB |
+ | Maximum Database Used       1 MB    Maximum Scratch Memory Used     45 MB |
+ |                                                                           |
+ |---------------------------------------------------------------------------|
+ |                                                                           |
+ |        CP Time      (sec) =          0.844       Time  =  23:27:22        |
+ |        Elapsed Time (sec) =          2.000       Date  =  06/26/2022      |
+ |                                                                           |
+ *---------------------------------------------------------------------------*
